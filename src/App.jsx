@@ -70,7 +70,8 @@ function App() {
       behavior: "smooth",
     });
   };*/
-  const showBtn = img.length > 0 && img.length >= 12;
+  const showBtn = img.length > 0 && img.length % 12 === 0;
+
   return (
     <>
       <Searchbar onSubmit={imageSubmit} />
